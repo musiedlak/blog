@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "blog",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": ["-c", "cd /Users/jan/blog && npm run dev"],
+      "port": 4321
+    }
+  ]
+}
