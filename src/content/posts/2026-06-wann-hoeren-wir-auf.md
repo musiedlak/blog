@@ -90,7 +90,3 @@ Damit das auch wirklich funktioniert, reicht aus meiner Sicht die Bedingung alle
 Was bleibt, ist eine Frage, die ich an mich selbst stelle so sehr wie an jeden, der gerade von einer Idee überzeugt ist:
 
 Wenn ich das nächste Mal wirklich überzeugt bin, traue ich mir dann zu, im selben Moment aufzuschreiben, woran ich erkennen würde, dass ich mich irre? Und wenn die Antwort ehrlich „nein" ist: Wovor schützt mich dieses Nein eigentlich?
-
----
-
-*Jan Musiedlak begleitet Geschäftsführer produzierender Unternehmen bei strategischen Entscheidungen unter Unsicherheit. Vorher hat er als Head of Digital Products bei ABS Safety die digitale Produktorganisation von vier auf 25 Personen aufgebaut.*

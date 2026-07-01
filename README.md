@@ -4,7 +4,7 @@ Field Notes von Jan Musiedlak. Astro, gehostet auf GitHub Pages.
 
 ## Neuen Beitrag schreiben
 
-Eine Markdown-Datei in `src/content/posts/` ablegen, z. B. `2026-07-titel.md`:
+Eine Markdown-Datei in `src/content/posts/` ablegen, z. B. `2026-07-titel.md`. Volles Frontmatter-Schema (alle Felder außer `title`/`date` optional), siehe `src/content.config.ts`:
 
 ```markdown
 ---
@@ -13,6 +13,20 @@ subtitle: "Optionaler Untertitel."
 date: 2026-07-15
 description: "Ein Satz für Vorschau und Suchmaschinen."
 draft: false
+kind: Standpunkt          # Standpunkt | Einordnung | Hands On
+cover: ./titelbild.jpg    # Bilddatei liegt neben der .md-Datei
+coverAlt: "Alt-Text fürs Titelbild"
+tldr:
+  - "Erster Kernpunkt."
+sources:
+  - label: "Beschreibung der Quelle"
+    url: "https://…"
+glossary:
+  - term: "Fachbegriff"
+    definition: "Kurze Erklärung."
+reasoningSeed:
+  these: "Zentrale These des Artikels."
+  frage: "Frage zum Weiterdenken."
 ---
 
 Fließtext in Markdown. Überschriften mit `## …`.
@@ -20,6 +34,7 @@ Fließtext in Markdown. Überschriften mit `## …`.
 
 - Der Dateiname (ohne `.md`) wird die URL: `/posts/2026-07-titel/`.
 - `draft: true` blendet den Beitrag aus der Übersicht aus.
+- Die Autoren-Bio mit Foto steht fest im Layout (`src/pages/posts/[...slug].astro`) und erscheint automatisch — nicht pro Artikel im Markdown pflegen.
 - Push auf `main` → die GitHub Action baut und veröffentlicht automatisch.
 
 ## Lokal entwickeln
