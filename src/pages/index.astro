@@ -1,5 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
 
 const posts = (await getCollection('posts'))
@@ -22,12 +23,30 @@ const fmt = new Intl.DateTimeFormat('de-DE', {
       {
         posts.map((post) => (
           <li>
-            <a href={`/posts/${post.id}/`}>
-              <time datetime={post.data.date.toISOString()}>
-                {fmt.format(post.data.date)}
-              </time>
-              <h2>{post.data.title}</h2>
-              {post.data.subtitle && <p>{post.data.subtitle}</p>}
+            <a href={`/posts/${post.id}/`} class="card">
+              {post.data.cover && (
+                <div class="card-cover">
+                  <Image
+                    src={post.data.cover}
+                    alt={post.data.coverAlt ?? ''}
+                    widths={[240, 400]}
+                    sizes="180px"
+                    loading="lazy"
+                  />
+                </div>
+              )}
+              <div class="card-text">
+                <div class="card-meta">
+                  {post.data.kind && <span class="tag">{post.data.kind}</span>}
+                  <time datetime={post.data.date.toISOString()}>
+                    {fmt.format(post.data.date)}
+                  </time>
+                </div>
+                <h2>{post.data.title}</h2>
+                {(post.data.description ?? post.data.subtitle) && (
+                  <p>{post.data.description ?? post.data.subtitle}</p>
+                )}
+              </div>
             </a>
           </li>
         ))

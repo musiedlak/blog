@@ -3,6 +3,44 @@ title: "Wann hören wir auf? Die Frage, die zu selten rechtzeitig gestellt wird.
 subtitle: "Über die Disziplin, ein Vorhaben rechtzeitig zu beenden, und warum sie schwerer fällt als die Vision."
 date: 2026-06-30
 description: "Warum die Disziplin, ein Vorhaben rechtzeitig zu beenden, schwerer fällt als die Vision — und wie ein vorab gesetztes Frühsignal das ändert."
+kind: Standpunkt
+cover: ./wann-hoeren-wir-auf.jpg
+coverAlt: "Metallteile auf einem Förderband in einer Fertigungslinie"
+tldr:
+  - "Bei fast jedem Vorhaben ist klar, was man sich erhofft – aber selten, woran man früh erkennt, dass die Idee nicht funktioniert."
+  - "Das Frühsignal gehört an die erfolgskritische Annahme, nicht an Finanzkennzahlen: Ob die Annahme hält, zeigt sich oft in Wochen; ob die Idee Ertrag bringt, erst nach Jahren."
+  - "Das Kriterium vorab zu setzen fällt schwer, weil es genau im Moment der Begeisterung verlangt wird – deshalb hilft es, vorher festzulegen, wer misst und wer entscheidet."
+sources:
+  - label: "This American Life, Ep. 403 (NUMMI, 2010) — die Andon-Cord im Toyota-Produktionssystem"
+    url: "https://www.thisamericanlife.org/403/nummi"
+  - label: "VW meldet Zahlen für 2023: Softwaresparte Cariad weitet Verluste aus — VDI-Nachrichten (2024)"
+    url: "https://www.vdi-nachrichten.com/wirtschaft/unternehmen/vw-meldet-zahlen-fuer-2023-softwaresparte-cariad-weitet-verluste-aus/"
+  - label: "Cariad: VW subsidiary largely discontinues its own software development — heise online (2025)"
+    url: "https://www.heise.de/en/news/Cariad-VW-subsidiary-largely-discontinues-its-own-software-development-10712012.html"
+  - label: "VW reassigns Cariad as coordinator of Rivian and Xpeng software — electrive (2025)"
+    url: "https://www.electrive.com/2025/10/06/vw-reassigns-cariad-as-coordinator-of-rivian-and-xpeng-software/"
+  - label: "Vom Konzept zur produktionsreifen Anwendung — Success Story Vaillant, codecentric"
+    url: "https://www.codecentric.de/success-stories/vaillant"
+  - label: "Firth et al.: Mortality on Mount Everest, 1921–2006 — BMJ 2008 (56 % der Todesfälle oberhalb 8.000 m beim Abstieg)"
+    url: "https://wrap.warwick.ac.uk/id/eprint/52009/"
+  - label: "Kahneman & Tversky: Prospect Theory — Econometrica 1979 (Verlustaversion)"
+    url: "https://courses.washington.edu/pbafhall/514/514%20Readings/ProspectTheory.pdf"
+  - label: "Arkes & Blumer: The Psychology of Sunk Cost — Organizational Behavior and Human Decision Processes 1985"
+    url: "https://doi.org/10.1016/0749-5978(85)90049-4"
+  - label: "Nickerson: Confirmation Bias — Review of General Psychology 1998 (Bestätigungsfehler)"
+    url: "https://pages.ucsd.edu/~mckenzie/nickersonConfirmationBias.pdf"
+glossary:
+  - term: "Andon-Cord"
+    definition: "Die Reißleine aus dem Toyota-Produktionssystem: Wer am Band einen Fehler sieht, zieht sie, und die Linie stoppt. Das Prinzip ist, den Fehler sofort sichtbar zu machen und zu beheben, statt ihn durchlaufen zu lassen."
+  - term: "Verlustaversion"
+    definition: "Die Neigung, drohende Verluste stärker zu gewichten als gleich große Gewinne. Ein Abbruch fühlt sich als sicherer Verlust schwerer an, als das Weitermachen als offene Chance wiegt."
+  - term: "Sunk-Cost-Effekt"
+    definition: "Bereits Ausgegebenes – Geld, Zeit, Mühe – beeinflusst die Entscheidung, obwohl es nicht zurückzuholen ist. Man macht weiter, um das Investierte nicht als verloren anzuerkennen."
+  - term: "Bestätigungsfehler"
+    definition: "Die Tendenz, vor allem Informationen wahrzunehmen, die die eigene Idee stützen, und widersprechende auszublenden."
+reasoningSeed:
+  these: "Bei Vorhaben unter Unsicherheit entscheidet die Disziplin, vorab ein nüchternes Abbruchkriterium an die erfolgskritische Annahme zu binden, mehr über den Ausgang als die Größe der Vision."
+  frage: "Woran würde ich – im Moment der größten Begeisterung – erkennen, dass meine wichtigste Annahme nicht hält, und wer dürfte diese Reißleine ziehen, ohne sich zu rechtfertigen?"
 ---
 
 Egal, was man anpackt, ein neues Geschäftsfeld, eine digitale Plattform, ein kleines internes Tool: Was man sich erhofft, ist meist klar. Woran man merken würde, dass die Idee nicht funktioniert, erstaunlich selten. Die Größe spielt keine Rolle. Auch ein kleines Vorhaben kann verpuffen und über Monate Ressourcen fressen.
@@ -39,7 +77,7 @@ Damit ist die Sache aber nicht entschieden. Ein erfahrener Geschäftsführer wid
 
 Denn ein nüchternes Frühsignal sollte nicht an dem oft komplexen Konstrukt einer ganzen Idee hängen, sondern an den erfolgskritischsten Risiken. Vor dem ersten Euro lohnt die Frage: Was muss alles zutreffen, damit die Idee funktioniert? Unter den Antworten sind oft einige wenige, über die man kaum Daten hat und an denen zugleich die ganze Idee hängt: Trifft auch nur eine nicht zu, scheitert das Vorhaben. An diese wenigen Annahmen gehört das Signal, nicht an Umsatzvolumen, Deckungsbeitrag oder Amortisationsdauer. Diese Kennzahlen kann man oft erst nach Jahren bewerten. Sicher trifft man mit seinen Überlegungen nicht mit absoluter Garantie das eine Risiko, das am Ende entscheidet. Aber jede vorab benannte Annahme ist ein möglicher Fehler, an dem man sich besser orientieren kann, als an einem diffusen Bauchgefühl.
 
-Ob eine große Idee am Ende den erhofften Ertrag bringt, weiß man oft erst nach Jahren. Das ist der Maßstab aus dem bestehenden Geschäft, der einen großen Sprung von Anfang an zu früh erdrückt. Ob aber das kritischste strategische Risiko mit hoher oder geringer Wahrscheinlichkeit eintritt, lässt sich häufig in Wochen oder Monaten belastbar genug einschätzen. Und falls das Risiko hoch ist, bedeutet das nicht, sofort alles hinwerfen zu müssen. Vielleicht braucht die Idee dann einen Kurswechsel, der jetzt aber auf belastbaren Erkenntnissen fußt. Erst wenn man keine ernsthafte Idee für einen Kurswechsel hat, ist wirklich Schluss. Ein Abbruchkriterium, das an einem Risiko hängt, verbietet also Beharrlichkeit nicht. Es sorgt nur dafür, dass man an etwas festhält, das noch tragfähig ist, und nicht aus Stolz an etwas, das keine Zukunft hat.
+Ob eine große Idee am Ende den erhofften Ertrag bringt, weiß man oft erst nach Jahren. Das ist der Maßstab aus dem bestehenden Geschäft, der einen großen Sprung von Anfang an zu früh erdrückt. Ob aber das kritischste strategische Risiko mit hoher oder geringer Wahrscheinlichkeit eintritt, lässt sich häufig in Wochen oder Monaten belastbar genug einschätzen. Und falls das Risiko hoch ist, bedeutet das nicht, sofort alles hinwerfen zu müssen. Vielleicht braucht die Idee dann einen Kurswechsel, der jetzt aber auf belastbaren Erkenntnissen fußt. Erst wenn man keine ernsthafte Idee für einen Kurswechsel hat, ist wirklich Schluss. Ein Abbruchkriterium, das an einem Risiko hängt, verbietet also Beharrlichkeit nicht. Es sorgt nur dafür, dass man an etwas festhält, das noch eine Chance hat, und nicht aus Stolz an etwas, das keine Zukunft hat.
 
 ## Der Spalt zwischen Wissen und Handeln
 
