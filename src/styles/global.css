@@ -86,32 +86,161 @@ a:hover { text-decoration: underline; }
 .site-parent span { margin-left: 0.15em; }
 .site-parent:hover { color: var(--accent); text-decoration: none; }
 
+/* ---------- Hero (Index) ---------- */
+.field-hero { max-width: 34rem; margin: 0 0 2.6rem; }
+.field-hero h1 {
+  font-family: var(--sans);
+  font-size: 2.15rem;
+  line-height: 1.16;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: var(--ink);
+  margin: 0.6rem 0 0;
+  text-wrap: balance;
+}
+.field-hero-sub {
+  margin: 0.9rem 0 0;
+  font-size: 1.04rem;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+/* ---------- Filter-Leiste ---------- */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.4rem;
+  padding-bottom: 1.4rem;
+  border-bottom: 1px solid var(--rule);
+}
+.filter-pills { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.filter-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid var(--rule);
+  background: #fff;
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--muted);
+  cursor: pointer;
+  transition: border-color 0.15s ease, color 0.15s ease, background-color 0.15s ease;
+}
+.filter-pill .count {
+  font-size: 0.64rem;
+  color: var(--faint);
+}
+.filter-pill:hover { border-color: rgba(15, 118, 110, 0.35); color: var(--ink); }
+.filter-pill.is-active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+.filter-pill.is-active .count { color: rgba(255, 255, 255, 0.75); }
+
+.search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 15.5rem;
+  padding: 0.5rem 0.7rem;
+  border-radius: 8px;
+  border: 1px solid var(--rule);
+  background: #fff;
+  color: var(--faint);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.search-box:focus-within {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.12);
+}
+.search-input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: var(--sans);
+  font-size: 0.88rem;
+  color: var(--ink);
+}
+.search-input::placeholder { color: var(--faint); }
+.search-input::-webkit-search-cancel-button { display: none; }
+.search-kbd {
+  flex-shrink: 0;
+  font-family: var(--mono);
+  font-size: 0.66rem;
+  color: var(--faint);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 0.05rem 0.4rem;
+}
+.search-box:focus-within .search-kbd { display: none; }
+
+.no-results {
+  padding: 2.4rem 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.96rem;
+}
+
 /* ---------- Index / post list ---------- */
 .post-list { list-style: none; margin: 0; padding: 0; }
-.post-list li { padding: 2rem 0; border-top: 1px solid var(--rule); }
-.post-list li:first-child { border-top: none; padding-top: 0; }
+.post-list li { border-top: 1px solid var(--rule); }
+.post-list li:first-child { border-top: none; }
 .post-list a { color: inherit; }
 .post-list a:hover { text-decoration: none; }
 .post-list a:hover h2 { color: var(--accent); }
-.post-list .card { display: flex; gap: 1.3rem; align-items: flex-start; }
+.post-list a:hover .card-cover img { transform: scale(1.045); }
+.post-list a:hover .card-cover::after { opacity: 0.34; }
+.post-list .card {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+  margin: 0 -1rem;
+  padding: 1.8rem 1rem;
+  border-radius: 10px;
+  transition: background-color 0.2s ease;
+}
+.post-list a:hover .card { background-color: rgba(24, 24, 27, 0.025); }
 .card-cover {
   position: relative;
-  width: 172px;
-  height: 116px;
+  width: 200px;
+  height: 150px;
   flex-shrink: 0;
   overflow: hidden;
-  border-radius: 3px;
+  border-radius: 6px;
   background: var(--ink);
+  box-shadow: 0 1px 2px rgba(24, 24, 27, 0.06), inset 0 0 0 1px rgba(24, 24, 27, 0.06);
 }
-.card-cover img { display: block; width: 100%; height: 100%; object-fit: cover; filter: grayscale(1) contrast(1.03); }
+.card-cover img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 38%;
+  filter: grayscale(1) contrast(1.08) brightness(1.04);
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
 .card-cover::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: var(--accent);
+  background: linear-gradient(160deg, var(--accent) 0%, var(--accent-strong) 100%);
   mix-blend-mode: color;
-  opacity: 0.5;
+  opacity: 0.46;
   pointer-events: none;
+  transition: opacity 0.3s ease;
 }
 .card-text { min-width: 0; }
 .post-list h2 {
@@ -126,22 +255,38 @@ a:hover { text-decoration: underline; }
 }
 .post-list p { margin: 0.5rem 0 0; color: var(--muted); font-size: 1rem; line-height: 1.5; }
 
-/* Kategorie-Tag + Datum (mono labels wie die Eyebrow-Labels der Hauptseite) */
+/* Kategorie-Pill + Datum */
 .tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.28rem 0.7rem 0.28rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(15, 118, 110, 0.08);
+  box-shadow: inset 0 0 0 1px rgba(15, 118, 110, 0.2);
   font-family: var(--mono);
-  font-size: 0.66rem;
-  font-weight: 500;
-  letter-spacing: 0.09em;
+  font-size: 0.64rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--accent-strong);
+  white-space: nowrap;
+}
+.tag::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--accent);
 }
 .card-meta,
 .post-meta {
   display: flex;
-  align-items: baseline;
-  gap: 0.7rem;
+  align-items: center;
+  gap: 0.75rem;
 }
-.card-meta { margin-bottom: 0.5rem; }
+.card-meta { margin-bottom: 0.6rem; }
 .post-meta { margin-bottom: 0.9rem; }
 .post-list time,
 .post-header time {
@@ -356,6 +501,9 @@ a:hover { text-decoration: underline; }
   .post-header h1 { font-size: 1.7rem; }
   .post-header .subtitle { font-size: 1.08rem; }
   .site-header { margin-bottom: 2.2rem; }
-  .post-list .card { flex-direction: column; gap: 0.9rem; }
-  .card-cover { width: 100%; height: 190px; }
+  .post-list .card { flex-direction: column; align-items: stretch; gap: 1rem; margin: 0 -0.5rem; padding: 1.4rem 0.5rem; }
+  .card-cover { width: 100%; height: 190px; object-position: 50% 42%; }
+  .field-hero h1 { font-size: 1.6rem; }
+  .filter-bar { flex-direction: column; align-items: stretch; }
+  .search-box { max-width: none; }
 }

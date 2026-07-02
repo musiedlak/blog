@@ -12,6 +12,16 @@ const fmt = new Intl.DateTimeFormat('de-DE', {
   month: 'long',
   year: 'numeric',
 });
+
+const KIND_ORDER = ['Standpunkt', 'Einordnung', 'Hands On'] as const;
+const presentKinds = KIND_ORDER.filter((kind) => posts.some((post) => post.data.kind === kind));
+
+function searchIndex(post: (typeof posts)[number]) {
+  return [post.data.title, post.data.subtitle, post.data.description, post.body]
+    .filter(Boolean)
+    .join(' ')
+    .toLowerCase();
+}
 ---
 
 <BaseLayout
@@ -19,10 +29,49 @@ const fmt = new Intl.DateTimeFormat('de-DE', {
   description="Field Notes zur Entscheidungslogik strategischer Vorhaben."
 >
   <div class="wrap">
-    <ul class="post-list">
+    <section class="field-hero">
+      <p class="eyebrow">Field Notes</p>
+      <h1>Entscheidungslogik für strategische Vorhaben.</h1>
+      <p class="field-hero-sub">
+        Standpunkte, Einordnungen und Hands-on-Notizen aus der Arbeit mit Geschäftsführungen, die
+        unter Unsicherheit entscheiden müssen.
+      </p>
+    </section>
+
+    <div class="filter-bar">
+      <div class="filter-pills" role="group" aria-label="Nach Art filtern">
+        <button type="button" class="filter-pill is-active" data-filter="all">
+          Alle <span class="count">{posts.length}</span>
+        </button>
+        {
+          presentKinds.map((kind) => (
+            <button type="button" class="filter-pill" data-filter={kind}>
+              {kind} <span class="count">{posts.filter((post) => post.data.kind === kind).length}</span>
+            </button>
+          ))
+        }
+      </div>
+      <div class="search-box">
+        <svg viewBox="0 0 18 18" width="15" height="15" fill="none" aria-hidden="true">
+          <circle cx="7.5" cy="7.5" r="5.5" stroke="currentColor" stroke-width="1.4" />
+          <path d="M12 12L16 16" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+        </svg>
+        <input
+          type="search"
+          id="field-search"
+          class="search-input"
+          placeholder="Field Notes durchsuchen…"
+          aria-label="Field Notes durchsuchen"
+          autocomplete="off"
+        />
+        <kbd class="search-kbd">/</kbd>
+      </div>
+    </div>
+
+    <ul class="post-list" id="post-list">
       {
         posts.map((post) => (
-          <li>
+          <li data-kind={post.data.kind ?? ''} data-search={searchIndex(post)}>
             <a href={`/posts/${post.id}/`} class="card">
               {post.data.cover && (
                 <div class="card-cover">
@@ -30,7 +79,7 @@ const fmt = new Intl.DateTimeFormat('de-DE', {
                     src={post.data.cover}
                     alt={post.data.coverAlt ?? ''}
                     widths={[240, 400]}
-                    sizes="180px"
+                    sizes="200px"
                     loading="lazy"
                   />
                 </div>
@@ -52,5 +101,53 @@ const fmt = new Intl.DateTimeFormat('de-DE', {
         ))
       }
     </ul>
+    <p class="no-results" id="no-results" hidden>
+      Keine Field Notes gefunden.
+    </p>
   </div>
 </BaseLayout>
+
+<script>
+  const searchInput = document.getElementById('field-search') as HTMLInputElement | null;
+  const pills = document.querySelectorAll<HTMLButtonElement>('.filter-pill');
+  const items = document.querySelectorAll<HTMLLIElement>('#post-list > li');
+  const noResults = document.getElementById('no-results');
+
+  let activeFilter = 'all';
+
+  function applyFilters() {
+    const query = (searchInput?.value ?? '').trim().toLowerCase();
+    let visibleCount = 0;
+
+    items.forEach((li) => {
+      const matchesKind = activeFilter === 'all' || li.dataset.kind === activeFilter;
+      const matchesSearch = !query || (li.dataset.search ?? '').includes(query);
+      const visible = matchesKind && matchesSearch;
+      li.hidden = !visible;
+      if (visible) visibleCount++;
+    });
+
+    if (noResults) noResults.hidden = visibleCount !== 0;
+  }
+
+  pills.forEach((pill) => {
+    pill.addEventListener('click', () => {
+      pills.forEach((p) => p.classList.remove('is-active'));
+      pill.classList.add('is-active');
+      activeFilter = pill.dataset.filter ?? 'all';
+      applyFilters();
+    });
+  });
+
+  searchInput?.addEventListener('input', applyFilters);
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === '/' && document.activeElement !== searchInput) {
+      event.preventDefault();
+      searchInput?.focus();
+    }
+    if (event.key === 'Escape' && document.activeElement === searchInput) {
+      searchInput?.blur();
+    }
+  });
+</script>
