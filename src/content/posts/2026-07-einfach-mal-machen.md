@@ -2,7 +2,7 @@
 title: "Einfach mal machen"
 subtitle: "Warum Machertum manchmal auch bremsen kann und warum das oft nicht erkannt wird."
 date: 2026-07-06
-description: "Warum das „einfach machen“-Machertum produzierender Familienunternehmen im Kerngeschäft trägt, in neuem Terrain aber bremst statt beschleunigt — und woran man den Unterschied erkennt."
+description: "Im Kerngeschäft gibt das physische Produkt den Takt vor, und vieles läuft, ohne dass jemand einen Rahmen setzt. In neuem Terrain fehlt dieser Takt — und dieselbe Haltung führt dann zu Eskalation und Stillstand statt zu Tempo."
 kind: Standpunkt
 tldr:
   - "„Einfach machen“ trägt in inhabergeführten Herstellern lange, weil das physische Produkt einen impliziten Rahmen liefert: einen Takt aus Produktion, Lieferung und Saison, den niemand aufschreiben muss."
