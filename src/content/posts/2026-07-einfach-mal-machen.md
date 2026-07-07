@@ -2,11 +2,11 @@
 title: "Einfach mal machen"
 subtitle: "Warum Machertum manchmal auch bremsen kann und warum das oft nicht erkannt wird."
 date: 2026-07-06
-description: "Im Kerngeschäft gibt das physische Produkt den Takt vor, und vieles läuft, ohne dass jemand einen Rahmen setzt. In neuem Terrain fehlt dieser Takt — und dieselbe Haltung führt dann zu Eskalation und Stillstand statt zu Tempo."
+description: "Im Kerngeschäft gibt das physische Produkt den Takt vor, und vieles läuft, ohne dass jemand einen Rahmen setzt. In neuem Terrain fehlt dieser Takt. Dieselbe Haltung führt dann zu Eskalation und Stillstand statt zu Tempo."
 kind: Standpunkt
 tldr:
   - "„Einfach machen“ trägt in inhabergeführten Herstellern lange, weil das physische Produkt einen impliziten Rahmen liefert: einen Takt aus Produktion, Lieferung und Saison, den niemand aufschreiben muss."
-  - "Kommt etwas Neues ohne diesen Takt, macht dasselbe „einfach machen“ ohne Rahmen nicht schnell, sondern langsam — ohne klare Entscheidungsrechte eskaliert alles nach oben, und Eskalation ist das Langsamste, was es gibt."
+  - "Kommt etwas Neues ohne diesen Takt, macht dasselbe „einfach machen“ ohne Rahmen nicht schnell, sondern langsam. Ohne klare Entscheidungsrechte eskaliert alles nach oben, und Eskalation ist das Langsamste, was es gibt."
   - "In neuem, rückmeldungsarmem Terrain macht erst das kurze Innehalten schnell: Richtung setzen, Entscheidung an die Basis. Der Macher überspringt es, weil es sich wie Stillstand anfühlt, und die Kultur („so denken wir hier nicht“) verteidigt den blinden Fleck."
 sources:
   - label: "Dorothy Leonard-Barton, „Core Capabilities and Core Rigidities: A Paradox in Managing New Product Development“ (Strategic Management Journal, 1992): dieselben Kernfähigkeiten und Werte, die im angestammten Geschäft stark machen, werden bei Neuem zu „core rigidities“."
@@ -19,17 +19,17 @@ sources:
     url: "https://www.bain.com/insights/most-meetings-end-before-decisions-are-made/"
   - label: "Bain & Company, „Who Has the D? How Clear Decision Roles Enhance Organizational Performance“ (Harvard Business Review, 2006): unklare Entscheidungsrollen als zentrale Ursache unwirksamer Entscheidungen; Grundlage des RAPID-Modells."
     url: "https://hbr.org/2006/01/who-has-the-d-how-clear-decision-roles-enhance-organizational-performance"
-  - label: "Jeff Bezos, Amazon-Aktionärsbrief 2016 („High-Velocity Decision Making“): umkehrbare Entscheidungen solle man mit etwa 70 % der gewünschten Information treffen — wer auf 90 % warte, sei meist zu langsam."
+  - label: "Jeff Bezos, Amazon-Aktionärsbrief 2016 („High-Velocity Decision Making“): umkehrbare Entscheidungen solle man mit etwa 70 % der gewünschten Information treffen; wer auf 90 % warte, sei meist zu langsam."
     url: "https://www.aboutamazon.com/news/company-news/2016-letter-to-shareholders"
   - label: "Daniel Kahneman & Gary Klein, „Conditions for Intuitive Expertise: A Failure to Disagree“ (American Psychologist, 2009): erfahrungsbasierte Intuition ist nur in hinreichend regelmäßigen, gut rückkoppelnden Umgebungen verlässlich."
     url: "https://doi.org/10.1037/a0016755"
   - label: "Jay R. Galbraith, „Organization Design: An Information Processing View“ (Interfaces, 1974): je größer die Unsicherheit einer Aufgabe, desto mehr muss die Entscheidung dorthin, wo die Information entsteht."
     url: "https://doi.org/10.1287/inte.4.3.28"
-  - label: "Henrik Kniberg, „Alignment at Scale“ (Keynote, Agile Africa, 2016): die Matrix aus Ausrichtung und Eigenständigkeit — hohe Autonomie ohne Ausrichtung ergibt Chaos, „Alignment enables Autonomy“."
+  - label: "Henrik Kniberg, „Alignment at Scale“ (Keynote, Agile Africa, 2016): die Matrix aus Ausrichtung und Eigenständigkeit: hohe Autonomie ohne Ausrichtung ergibt Chaos, „Alignment enables Autonomy“."
     url: "https://blog.crisp.se/2016/08/23/henrikkniberg/alignment-at-scale-agile-africa-keynote"
 reasoningSeed:
   these: "In produzierenden Familienunternehmen trägt „einfach machen“ so lange, wie das physische Produkt einen impliziten Rahmen liefert; in neuem, rückmeldungsarmem Terrain macht dasselbe „einfach machen“ ohne gesetzten Rahmen nicht schnell, sondern langsam."
-  frage: "Wenn ich das nächste Mal „lass uns einfach machen“ sage — weiß ich, ob hinter der Tür vertrautes Gelände liegt oder neues, und überspringe ich das kurze Richtung-Setzen nur, weil Nachdenken sich wie Stillstand anfühlt?"
+  frage: "Wenn ich das nächste Mal „lass uns einfach machen“ sage, weiß ich, ob hinter der Tür vertrautes Gelände liegt oder neues, und überspringe ich das kurze Richtung-Setzen nur, weil Nachdenken sich wie Stillstand anfühlt?"
 ---
 
 „Wir machen einfach mal.“ Den Satz höre ich oft, und meistens fällt er in einem bestimmten Typ von Unternehmen: inhabergeführt, mit einem physischen Produkt, auf das man mit gutem Recht stolz ist, weil es über Jahrzehnte besser geworden ist und im Markt funktioniert. Handwerksnah, weil die Kunden oft selbst Handwerker sind und weil man auch selbst fertigt und ausliefert, statt in Folien über das Fertigen zu reden. „Wir sind Hersteller, wir machen, keine Bedenkenträger.“ Das ist nicht dahingesagt, sondern ein Selbstbild, bei dem man gut versteht, woher es kommt.
