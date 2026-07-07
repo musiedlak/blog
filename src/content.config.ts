@@ -10,7 +10,7 @@ const posts = defineCollection({
       date: z.coerce.date(),
       description: z.string().optional(),
       draft: z.boolean().optional().default(false),
-      kind: z.enum(['Standpunkt', 'Einordnung', 'Hands On']).optional(),
+      kind: z.enum(['Standpunkt', 'Einordnung', 'Erfahrungsbericht']).optional(),
       cover: image().optional(),
       coverAlt: z.string().optional(),
       // Mitdenk-Mechanismen (Stil-Leitfaden §6) — alle optional

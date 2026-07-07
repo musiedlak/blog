@@ -13,7 +13,7 @@ const fmt = new Intl.DateTimeFormat('de-DE', {
   year: 'numeric',
 });
 
-const KIND_ORDER = ['Standpunkt', 'Einordnung', 'Hands On'] as const;
+const KIND_ORDER = ['Standpunkt', 'Einordnung', 'Erfahrungsbericht'] as const;
 const presentKinds = KIND_ORDER.filter((kind) => posts.some((post) => post.data.kind === kind));
 
 function searchIndex(post: (typeof posts)[number]) {
@@ -26,15 +26,15 @@ function searchIndex(post: (typeof posts)[number]) {
 
 <BaseLayout
   title="Jan Musiedlak — Field Notes"
-  description="Field Notes zur Entscheidungslogik strategischer Vorhaben."
+  description="Field Notes zu Innovation und Entscheidungslogik — Beobachtungen aus der Arbeit mit Geschäftsführungen, die unter Unsicherheit entscheiden."
 >
   <div class="wrap">
     <section class="field-hero">
       <p class="eyebrow">Field Notes</p>
-      <h1>Entscheidungslogik für strategische Vorhaben.</h1>
+      <h1>Eigene Standpunkte, kritische Einordnungen und Erfahrungsberichte zu Innovation und Entscheidungslogik.</h1>
       <p class="field-hero-sub">
-        Standpunkte, Einordnungen und Hands-on-Notizen aus der Arbeit mit Geschäftsführungen, die
-        unter Unsicherheit entscheiden müssen.
+        Field Notes sind meine Beobachtungen, Inspirationen und Erinnerungen aus dem Feld, gedacht
+        als Gedankenanstoß, nicht als Belehrung oder letzte Wahrheit.
       </p>
     </section>
 
