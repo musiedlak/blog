@@ -5,8 +5,8 @@ date: 2026-07-06
 description: "Im Kerngeschäft gibt das physische Produkt den Takt vor, und vieles läuft, ohne dass jemand einen Rahmen setzt. In neuem Terrain fehlt dieser Takt. Dieselbe Haltung führt dann zu Eskalation und Stillstand statt zu Tempo."
 kind: Standpunkt
 tldr:
-  - "„Einfach machen“ trägt in inhabergeführten Herstellern lange, weil das physische Produkt einen impliziten Rahmen liefert: einen Takt aus Produktion, Lieferung und Saison, den niemand aufschreiben muss."
-  - "Kommt etwas Neues ohne diesen Takt, macht dasselbe „einfach machen“ ohne Rahmen nicht schnell, sondern langsam. Ohne klare Entscheidungsrechte eskaliert alles nach oben, und Eskalation ist das Langsamste, was es gibt."
+  - "In inhabergeführten Herstellern läuft vieles gut, ohne dass jemand einen Rahmen setzt: Das physische Produkt gibt den Takt vor, aus Produktion, Lieferung und Saison. Diesen Rahmen hat sich niemand ausgedacht, er ist einfach da."
+  - "Kommt etwas Neues ohne diesen Takt, wird dasselbe „einfach machen“ ohne Rahmen nicht schnell, sondern langsam: Wenn nicht geklärt ist, wer entscheiden darf, eskaliert alles zur Führung, und Eskalation ist das Langsamste, was es gibt."
   - "In neuem, rückmeldungsarmem Terrain macht erst das kurze Innehalten schnell: Richtung setzen, Entscheidung an die Basis. Der Macher überspringt es, weil es sich wie Stillstand anfühlt, und die Kultur („so denken wir hier nicht“) verteidigt den blinden Fleck."
 sources:
   - label: "Dorothy Leonard-Barton, „Core Capabilities and Core Rigidities: A Paradox in Managing New Product Development“ (Strategic Management Journal, 1992): dieselben Kernfähigkeiten und Werte, die im angestammten Geschäft stark machen, werden bei Neuem zu „core rigidities“."
@@ -28,7 +28,7 @@ sources:
   - label: "Henrik Kniberg, „Alignment at Scale“ (Keynote, Agile Africa, 2016): die Matrix aus Ausrichtung und Eigenständigkeit: hohe Autonomie ohne Ausrichtung ergibt Chaos, „Alignment enables Autonomy“."
     url: "https://blog.crisp.se/2016/08/23/henrikkniberg/alignment-at-scale-agile-africa-keynote"
 reasoningSeed:
-  these: "In produzierenden Familienunternehmen trägt „einfach machen“ so lange, wie das physische Produkt einen impliziten Rahmen liefert; in neuem, rückmeldungsarmem Terrain macht dasselbe „einfach machen“ ohne gesetzten Rahmen nicht schnell, sondern langsam."
+  these: "In produzierenden Familienunternehmen läuft „einfach machen“ so lange gut, wie das physische Produkt einen impliziten Rahmen liefert; in neuem, rückmeldungsarmem Terrain wird dasselbe Vorgehen ohne gesetzten Rahmen nicht schnell, sondern langsam."
   frage: "Wenn ich das nächste Mal „lass uns einfach machen“ sage, weiß ich, ob hinter der Tür vertrautes Gelände liegt oder neues, und überspringe ich das kurze Richtung-Setzen nur, weil Nachdenken sich wie Stillstand anfühlt?"
 ---
 
@@ -60,7 +60,7 @@ Was am Ende langsam wird, sind also nicht die Tätigkeiten, sondern die Entschei
 
 An einer Stelle muss ich dem Macher recht geben, sonst wäre das hier zu billig. Bei vielen Entscheidungen ist Abwarten tatsächlich der Fehler. Man braucht selten alle Informationen, die man sich wünschen würde; oft reichen etwa siebzig Prozent, und wer auf mehr wartet, ist am Ende nur langsam. Das spricht fürs Machen, nicht dagegen.
 
-Das halte ich für richtig, nur löst schnelles Handeln das eigentliche Problem nicht grundsätzlich, sondern nur im richtigen Kontext. Die Frage ist aus meiner Sicht nicht „Rahmen oder Tempo“, sondern was hinter der Tür liegt, durch die man geht. Dabei kommt es weniger darauf an, ob es neu ist, als ob das Terrain dahinter schnell und eindeutig zurückmeldet, ob man richtig liegt. Wo es das tut, trägt die über Jahre gewachsene Erfahrung auch ohne aufgeschriebenen Rahmen; ein angrenzender Markt mit derselben Logik und denselben Fehlerarten ist neu, aber vertrautes Gelände. Wo es das nicht tut, trägt die Erfahrung nicht, und wer dann keinen Rahmen setzt, verläuft sich in dem Raum dahinter.
+Das halte ich für richtig, nur löst schnelles Handeln das eigentliche Problem nicht grundsätzlich, sondern nur im richtigen Kontext. Die Frage ist aus meiner Sicht nicht „Rahmen oder Tempo“, sondern was hinter der Tür liegt, durch die man geht. Dabei kommt es weniger darauf an, ob es neu ist, als ob das Terrain dahinter schnell und eindeutig zurückmeldet, ob man richtig liegt. Wo es das tut, greift die über Jahre gewachsene Erfahrung auch ohne aufgeschriebenen Rahmen; ein angrenzender Markt mit derselben Logik und denselben Fehlerarten ist neu, aber vertrautes Gelände. Wo es das nicht tut, greift die Erfahrung nicht, und wer dann keinen Rahmen setzt, verläuft sich in dem Raum dahinter.
 
 Gefährlich wird es, wenn man das eine für das andere hält. Ein Hersteller, der einen angrenzenden Markt betritt, schließt von seiner starken Marktposition im Kerngeschäft darauf, dass er auch das Neue im Grunde schon versteht, nach dem Motto „Das kennen wir doch“. Die Domänensicherheit, die im Kerngeschäft eine Stärke ist, wird hier zur Falle: Der implizite Erfahrungsrahmen wird auf ein Terrain übertragen, das gar keine verlässliche Rückmeldung mehr gibt. Genau dann muss ich einen Rahmen setzen, nicht um zu entschleunigen, sondern um nicht blind loszurennen.
 
