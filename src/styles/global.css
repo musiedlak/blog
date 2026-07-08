@@ -314,12 +314,14 @@ a:hover { text-decoration: underline; }
 /* Editorial-Layout ab Tablet-Breite: schmale Lesespalte + mitlaufende Rand-Spalte.
    Das Weiß links bekommt eine Aufgabe (Meta), die Komposition wird bewusst asymmetrisch. */
 @media (min-width: 60rem) {
+  /* Ein gemeinsamer Seitenrahmen: Nav, Artikel und Footer teilen dieselben Kanten */
+  .layout-wide .site-header .wrap,
+  .layout-wide .site-footer .wrap { max-width: 58rem; }
   .post {
-    max-width: 60rem;
+    max-width: 58rem;
     display: grid;
-    grid-template-columns: 11rem minmax(0, var(--measure));
+    grid-template-columns: 11rem minmax(0, 1fr);
     column-gap: 3.5rem;
-    justify-content: center;
     align-items: start;
   }
   .post > * { grid-column: 2; min-width: 0; }

@@ -4,9 +4,10 @@ import '../styles/global.css';
 interface Props {
   title: string;
   description?: string;
+  wide?: boolean;
 }
 
-const { title, description } = Astro.props;
+const { title, description, wide = false } = Astro.props;
 const year = new Date().getFullYear();
 ---
 
@@ -20,7 +21,7 @@ const year = new Date().getFullYear();
     <meta name="author" content="Jan Musiedlak" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   </head>
-  <body>
+  <body class={wide ? 'layout-wide' : undefined}>
     <header class="site-header">
       <div class="wrap site-masthead">
         <div class="site-identity">
