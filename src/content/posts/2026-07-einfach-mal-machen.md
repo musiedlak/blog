@@ -14,14 +14,14 @@ reasoningSeed:
   these: "In produzierenden Familienunternehmen läuft „einfach machen“ so lange gut, wie das physische Produkt einen impliziten Rahmen liefert; in neuem, rückmeldungsarmem Terrain wird dasselbe Vorgehen ohne gesetzten Rahmen nicht schnell, sondern langsam."
   frage: "Wenn ich das nächste Mal „lass uns einfach machen“ sage, weiß ich, ob hinter der Tür vertrautes Gelände liegt oder neues, und überspringe ich das kurze Richtung-Setzen nur, weil Nachdenken sich wie Stillstand anfühlt?"
 glossary:
+  - term: "Taktgeber"
+    definition: "Alles, was einem Vorhaben von außen einen Rhythmus und einen verlässlichen Abschluss vorgibt – beim physischen Produkt etwa Produktionszyklen, Liefertermine und Saison. Fehlt ein solcher Taktgeber, muss der Rahmen bewusst gesetzt werden, statt sich von selbst einzustellen."
+  - term: "Domänensicherheit"
+    definition: "Die aus langer Erfahrung gewachsene Sicherheit im eigenen Kerngeschäft. Im vertrauten Terrain eine Stärke – auf ein neues, rückmeldungsarmes Feld übertragen wird sie zur Falle, weil die Erfahrung dort nicht mehr verlässlich greift."
   - term: "Core Rigidities"
-    definition: "Dieselben Kernfähigkeiten, die ein Unternehmen im angestammten Geschäft stark machen – eingespielte Abläufe, Systeme, verinnerlichte Werte –, werden bei etwas Neuem zu Verhärtungen, die Anpassung behindern. Die Stärke des Kerngeschäfts wird im neuen Terrain zur Bremse."
-  - term: "RAPID"
-    definition: "Ein Modell für klare Entscheidungsrechte: Wer liefert Input, wer empfiehlt, wer stimmt zu, wer entscheidet, wer setzt um. Es macht die sonst implizite Frage explizit, wer eine Entscheidung überhaupt treffen darf."
-  - term: "Zwei-Wege-Tür"
-    definition: "Bezos' Unterscheidung zwischen umkehrbaren und unumkehrbaren Entscheidungen. Umkehrbare Züge kann man mit etwa 70 % der Information treffen und nach unten delegieren; nur wirklich unumkehrbare rechtfertigen den langsamen, zentralen Weg."
+    definition: "Der Fachbegriff für das Muster hinter diesem Text: Dieselben Kernfähigkeiten, die ein Unternehmen im angestammten Geschäft stark machen – Abläufe, Systeme, verinnerlichte Werte –, werden bei etwas Neuem zu Verhärtungen, die Anpassung behindern."
   - term: "Ausrichtung und Autonomie"
-    definition: "Erst eine geteilte Ausrichtung – ein klares Wohin – macht dezentrale Autonomie möglich. Ohne Ausrichtung führt Autonomie zu Chaos, ohne Autonomie führt Ausrichtung zu Stillstand."
+    definition: "Erst eine geteilte Ausrichtung – ein klares Wohin – macht dezentrale Autonomie möglich. Ohne Ausrichtung wird aus Eigenständigkeit Chaos, ohne Autonomie wird aus Ausrichtung Stillstand."
 ---
 
 „Wir machen einfach mal.“ Den Satz höre ich oft, und meistens fällt er in einem bestimmten Typ von Unternehmen: inhabergeführt, mit einem physischen Produkt, auf das man mit gutem Recht stolz ist, weil es über Jahrzehnte besser geworden ist und im Markt funktioniert. Handwerksnah, weil die Kunden oft selbst Handwerker sind und weil man auch selbst fertigt und ausliefert, statt in Folien über das Fertigen zu reden. „Wir sind Hersteller, wir machen, keine Bedenkenträger.“ Das ist nicht dahingesagt, sondern ein Selbstbild, bei dem man gut versteht, woher es kommt.

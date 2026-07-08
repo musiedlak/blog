@@ -72,6 +72,17 @@ const sourceUrl = new URL(`posts/${post.id}/`, Astro.site).href;
       )
     }
 
+    {
+      seed && (
+        <ReasoningSeed
+          title={post.data.title}
+          these={seed.these}
+          frage={seed.frage}
+          sourceUrl={sourceUrl}
+        />
+      )
+    }
+
     <div class="post-body">
       <Content />
     </div>
@@ -102,17 +113,6 @@ const sourceUrl = new URL(`posts/${post.id}/`, Astro.site).href;
             ))}
           </dl>
         </section>
-      )
-    }
-
-    {
-      seed && (
-        <ReasoningSeed
-          title={post.data.title}
-          these={seed.these}
-          frage={seed.frage}
-          sourceUrl={sourceUrl}
-        />
       )
     }
 
