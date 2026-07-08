@@ -19,8 +19,7 @@
   --rule: #e4e4e7;          /* zinc-200 */
   --accent: #0f766e;        /* teal-700 */
   --accent-strong: #115e59; /* teal-800 */
-  --measure: 42rem;
-  --measure-wide: 66rem;
+  --measure: 44rem;
   --sans: 'Geist', system-ui, -apple-system, 'Segoe UI', sans-serif;
   --mono: 'Geist Mono', ui-monospace, SFMono-Regular, monospace;
 }
@@ -302,19 +301,60 @@ a:hover { text-decoration: underline; }
 /* ---------- Post ---------- */
 .post { padding-bottom: 1rem; }
 .post-header { margin-bottom: 1.6rem; }
+
+.post-rail time {
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--faint);
+}
+
+/* Editorial-Layout ab Tablet-Breite: schmale Lesespalte + mitlaufende Rand-Spalte.
+   Das Weiß links bekommt eine Aufgabe (Meta), die Komposition wird bewusst asymmetrisch. */
+@media (min-width: 60rem) {
+  .post {
+    max-width: 60rem;
+    display: grid;
+    grid-template-columns: 11rem minmax(0, var(--measure));
+    column-gap: 3.5rem;
+    justify-content: center;
+    align-items: start;
+  }
+  .post > * { grid-column: 2; min-width: 0; }
+  .post-rail {
+    grid-column: 1;
+    grid-row: 1 / 999;
+    margin: 0;
+  }
+  .post-rail-inner {
+    position: sticky;
+    top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding-top: 0.35rem;
+    text-align: left;
+  }
+  .post-rail .post-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+    margin: 0;
+  }
+}
 .post-hero {
   position: relative;
   overflow: hidden;
-  border-radius: 6px;
   background: var(--ink);
-  /* Cinematisches Leitbild: breiter als die Lesespalte, flach beschnitten */
-  width: min(var(--measure-wide), calc(100vw - 2.8rem));
+  /* Randloses Cover-Band ganz oben, über der Überschrift — eigene Medienebene */
+  width: 100%;
   aspect-ratio: 12 / 5;
-  margin-left: 50%;
-  margin-bottom: 2.6rem;
-  transform: translateX(-50%);
+  max-height: 34rem;
+  margin: 0 0 3.2rem;
 }
-.post-hero img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 48%; filter: grayscale(1) contrast(1.03); }
+.post-hero img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; filter: grayscale(1) contrast(1.03); }
 .post-hero::after {
   content: '';
   position: absolute;
