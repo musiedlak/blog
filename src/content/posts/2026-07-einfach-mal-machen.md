@@ -4,6 +4,8 @@ subtitle: "Warum Machertum manchmal auch bremsen kann und warum das oft nicht er
 date: 2026-07-06
 description: "Im Kerngeschäft gibt das physische Produkt den Takt vor, und vieles läuft, ohne dass jemand einen Rahmen setzt. In neuem Terrain fehlt dieser Takt. Dieselbe Haltung führt dann zu Eskalation und Stillstand statt zu Tempo."
 kind: Standpunkt
+cover: ./einfach-mal-machen.jpg
+coverAlt: "Ein Pfad, der bergauf führt und sich im Nebel verliert"
 tldr:
   - "In inhabergeführten Herstellern läuft vieles gut, ohne dass jemand einen Rahmen aufschreibt: Das physische Produkt gibt den Takt vor, aus Produktion, Lieferung und Saison, und über Jahrzehnte verfeinerte Abläufe kommen dazu. Dieser Rahmen ist hart erarbeitet, nur so eingebaut, dass ihn keiner mehr als Leistung erkennt."
   - "Kommt etwas Neues ohne diesen Takt, wird dasselbe „einfach machen“ ohne Rahmen nicht schnell, sondern langsam: Wenn nicht geklärt ist, wer entscheiden darf, eskaliert alles zur Führung, und Eskalation ist das Langsamste, was es gibt."
