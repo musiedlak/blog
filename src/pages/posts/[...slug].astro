@@ -2,6 +2,7 @@
 import { getCollection, render } from 'astro:content';
 import { Image } from 'astro:assets';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import ReasoningSeed from '../../components/ReasoningSeed.astro';
 import authorPhoto from '../../assets/jan-musiedlak.jpeg';
 
 export async function getStaticPaths() {
@@ -22,9 +23,7 @@ const fmt = new Intl.DateTimeFormat('de-DE', {
 });
 
 const seed = post.data.reasoningSeed;
-const seedText = seed
-  ? `These: ${seed.these}\n\nZentrale Spannung: ${seed.frage}`
-  : '';
+const sourceUrl = new URL(`posts/${post.id}/`, Astro.site).href;
 ---
 
 <BaseLayout title={post.data.title} description={post.data.description} wide>
@@ -108,14 +107,12 @@ const seedText = seed
 
     {
       seed && (
-        <section class="post-appendix seed">
-          <h2>Weiterdenken</h2>
-          <p class="seed-intro">Kopiere diesen Impuls in dein KI-Tool und denk die Frage weiter.</p>
-          <div class="seed-box">
-            <pre class="seed-prompt">{seedText}</pre>
-            <button class="seed-copy" type="button" data-seed={seedText}>Impuls kopieren</button>
-          </div>
-        </section>
+        <ReasoningSeed
+          title={post.data.title}
+          these={seed.these}
+          frage={seed.frage}
+          sourceUrl={sourceUrl}
+        />
       )
     }
 
@@ -133,21 +130,22 @@ const seedText = seed
 </BaseLayout>
 
 <script>
-  document.querySelectorAll<HTMLButtonElement>('.seed-copy').forEach((btn) => {
-    btn.addEventListener('click', async () => {
-      const text = btn.dataset.seed ?? '';
-      try {
-        await navigator.clipboard.writeText(text);
-        const original = btn.textContent;
-        btn.textContent = 'Kopiert';
-        btn.classList.add('is-copied');
-        setTimeout(() => {
-          btn.textContent = original;
-          btn.classList.remove('is-copied');
-        }, 1800);
-      } catch {
-        btn.textContent = 'Kopieren nicht möglich';
+  // Nummerierte Insight-Überschriften der "Wesentliche Insights"-Sektion auszeichnen
+  // (### N — Titel). Speist die Anzeige und den Reasoning-Seed-Copy-Button.
+  const body = document.querySelector('.post-body');
+  if (body) {
+    body.querySelectorAll('h3').forEach((h3) => {
+      const text = h3.textContent?.trim() || '';
+      const match = text.match(/^(\d+)\s*—\s*(.+)$/);
+      if (!match) return;
+      const padded = String(parseInt(match[1], 10)).padStart(2, '0');
+      h3.innerHTML = `<span class="fn-insight-num">${padded}</span> ${match[2]}`;
+      h3.classList.add('fn-insight-heading');
+      let sib = h3.nextElementSibling;
+      while (sib && sib.tagName !== 'H2' && sib.tagName !== 'H3') {
+        if (sib.tagName === 'P') sib.classList.add('fn-insight-p');
+        sib = sib.nextElementSibling;
       }
     });
-  });
+  }
 </script>

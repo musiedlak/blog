@@ -1,0 +1,107 @@
+---
+interface Props {
+  title: string;
+  these: string;
+  frage: string;
+  sourceUrl: string;
+}
+
+const { title, these, frage, sourceUrl } = Astro.props;
+
+// Basis fürs Clipboard; Key Insights werden am Klick aus dem DOM gelesen.
+const clipboardBase = { title, these, frage, sourceUrl };
+---
+
+<section class="post-appendix reasoning-seed">
+  <div class="rs-head">
+    <h2>Reasoning Seed</h2>
+    <button class="rs-help-toggle" type="button" aria-label="Was ist ein Reasoning Seed?">?</button>
+  </div>
+
+  <div class="rs-help rs-help-collapsed">
+    <p>
+      Ein Reasoning Seed ist ein strukturierter Prompt, den du in dein KI-Reasoning-Tool kopieren
+      kannst (Claude, ChatGPT, Obsidian, Notion). Er enthält die These des Artikels, die zentrale
+      Spannung und die wesentlichen Insights — bereit für deine eigene Analyse.
+    </p>
+    <p>Klick den Button unten, um den vollständigen Prompt als Markdown zu kopieren.</p>
+  </div>
+
+  <div class="seed-box">
+    <p class="rs-tension"><strong>Spannung:</strong> {frage}</p>
+    <button class="rs-copy" type="button" data-rs-base={JSON.stringify(clipboardBase)} aria-label="Als Markdown kopieren">
+      <svg class="rs-icon rs-icon-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+        <rect x="8" y="2" width="8" height="4" rx="1" ry="1" />
+      </svg>
+      <svg class="rs-icon rs-icon-check is-hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <path d="M20 6L9 17l-5-5" />
+      </svg>
+      <span class="rs-label" data-default="Als Markdown in dein Reasoning-Tool kopieren" data-success="Kopiert!">Als Markdown in dein Reasoning-Tool kopieren</span>
+    </button>
+  </div>
+</section>
+
+<script>
+  // Erklärung aus-/einklappen
+  document.querySelectorAll<HTMLButtonElement>(".rs-help-toggle").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const help = btn.closest(".reasoning-seed")?.querySelector(".rs-help");
+      help?.classList.toggle("rs-help-collapsed");
+    });
+  });
+
+  // Kopieren: vollständigen Prompt als Markdown bauen (Key Insights aus dem DOM)
+  document.querySelectorAll<HTMLButtonElement>(".rs-copy").forEach((btn) => {
+    btn.addEventListener("click", async () => {
+      const base = JSON.parse(btn.dataset.rsBase || "{}");
+
+      const lines: string[] = [
+        `## ${base.title}`,
+        `**These**: ${base.these}`,
+        `**Spannung**: ${base.frage}`,
+      ];
+
+      const headings = document.querySelectorAll(".post-body .fn-insight-heading");
+      if (headings.length > 0) {
+        lines.push("", "### Wesentliche Insights");
+        headings.forEach((h3) => {
+          const num = h3.querySelector(".fn-insight-num")?.textContent?.trim() || "";
+          const heading = (h3.textContent?.trim() || "").replace(/^\d{2}\s*/, "");
+          let sib = h3.nextElementSibling;
+          let firstPara = "";
+          while (sib && sib.tagName !== "H2" && sib.tagName !== "H3") {
+            if (sib.classList.contains("fn-insight-p")) {
+              firstPara = sib.textContent?.trim() || "";
+              break;
+            }
+            sib = sib.nextElementSibling;
+          }
+          lines.push(`${num} — ${heading}`);
+          if (firstPara) lines.push(firstPara);
+          lines.push("");
+        });
+      }
+
+      lines.push(`**Quelle**: ${base.sourceUrl}`);
+      const text = lines.join("\n");
+
+      const iconCopy = btn.querySelector(".rs-icon-copy");
+      const iconCheck = btn.querySelector(".rs-icon-check");
+      const label = btn.querySelector<HTMLElement>(".rs-label");
+      try {
+        await navigator.clipboard.writeText(text);
+        btn.classList.add("is-copied");
+        iconCopy?.classList.add("is-hidden");
+        iconCheck?.classList.remove("is-hidden");
+        if (label) label.textContent = label.dataset.success || "Kopiert!";
+        setTimeout(() => {
+          btn.classList.remove("is-copied");
+          iconCopy?.classList.remove("is-hidden");
+          iconCheck?.classList.add("is-hidden");
+          if (label) label.textContent = label.dataset.default || "";
+        }, 2000);
+      } catch {}
+    });
+  });
+</script>

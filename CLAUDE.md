@@ -8,36 +8,42 @@ Jeder Beitrag ist eine einzelne Markdown-Datei in `src/content/posts/`, Dateinam
 
 Gehört ein Titelbild dazu, liegt es als Datei direkt daneben im selben Ordner (`src/content/posts/wann-hoeren-wir-auf.jpg`) und wird per Frontmatter-Feld `cover` relativ referenziert.
 
+## Kern-Set (Pflicht) — vom Build erzwungen
+
+Jede Field Note folgt dem **Panoptia-Field-Note-Standard** (Format-Referenz: `tracks/panoptia/panoptia-landing-page/src/components/ReasoningSeed.astro` + `content/shares/_template.md`; Begründung: `stil-leitfaden.md §6`). **Vorlage kopieren: `src/content/posts/_template.md`.** `npm run check` (Prebuild + CI, `scripts/check-content.mjs`) **bricht den Build ab**, wenn ein Pflicht-Element fehlt:
+
+- `tldr` (≥1) und `reasoningSeed` (`these` + `frage`) — Pflicht, per Zod-Schema erzwungen.
+- Body-Sektion `## Wesentliche Insights` mit **≥2** Insights im Format `### N — Titel` + Absatz. Das Enhancement-Script in `[...slug].astro` nummeriert sie (`.fn-insight-*`); die erste Absatz-Zeile jedes Insights wandert in den kopierbaren Reasoning-Seed-Prompt.
+- Quellen als **Fußnoten im Body** (`[^kürzel]` im Text, `[^kürzel]: Zitat → kurzer Abstract → URL` am Ende). GFM rendert sie als „Fußnoten"-Sektion. (Das alte `sources`-Frontmatter ist nur noch Fallback.)
+
+Empfohlen/situativ (§6): `glossary` (Frontmatter, nur wenn Fachbegriffe nicht selbsterklärend), Kritische Einordnung, Diskussionsfragen.
+
 ## Frontmatter-Schema
 
-Quelle der Wahrheit: `src/content.config.ts`. Aktuell gültige Felder:
+Quelle der Wahrheit: `src/content.config.ts`.
 
 ```yaml
 ---
-title: "Titel des Beitrags"
-subtitle: "Optionaler Untertitel."               # optional
-date: 2026-06-30
-description: "Ein Satz für Vorschau/Meta/SEO."   # optional
-draft: false                                      # optional, default false — blendet aus der Übersicht aus
-kind: Standpunkt                                  # optional: Standpunkt | Einordnung | Hands On
-cover: ./dateiname.jpg                            # optional, relativer Pfad neben der .md-Datei
-coverAlt: "Alt-Text fürs Titelbild"                # optional
-tldr:                                              # optional — "Kurz gefasst"-Box oben im Artikel
+title: "Titel des Beitrags"                        # Pflicht
+date: 2026-06-30                                    # Pflicht
+tldr:                                               # Pflicht (≥1) — "Kurz gefasst"-Box
   - "Erster Kernpunkt."
-  - "Zweiter Kernpunkt."
-sources:                                           # optional — Quellen-Sektion am Ende
-  - label: "Beschreibung der Quelle"
-    url: "https://…"
-glossary:                                          # optional — Glossar-Sektion am Ende
+reasoningSeed:                                      # Pflicht — Reasoning-Seed-Box
+  these: "Zentrale These in einem Satz."
+  frage: "Die Spannung/Frage zum Weiterdenken."
+subtitle: "Optionaler Untertitel."                 # optional
+description: "Ein Satz für Vorschau/Meta/SEO."      # optional
+draft: false                                        # optional — blendet aus Übersicht + Content-Check aus
+kind: Standpunkt                                    # optional: Standpunkt | Einordnung | Erfahrungsbericht
+cover: ./dateiname.jpg                              # optional, relativer Pfad neben der .md-Datei
+coverAlt: "Alt-Text fürs Titelbild"                 # optional
+glossary:                                           # empfohlen — Glossar-Sektion am Ende
   - term: "Fachbegriff"
     definition: "Kurze Erklärung."
-reasoningSeed:                                     # optional — "Weiterdenken"-Box mit Copy-Button
-  these: "Zentrale These des Artikels in einem Satz."
-  frage: "Die Spannung/Frage, die zum Weiterdenken anregt."
 ---
 ```
 
-Nach dem Frontmatter folgt der Fließtext in Markdown, Zwischenüberschriften mit `## `.
+Nach dem Frontmatter folgt der Fließtext, Zwischenüberschriften mit `## ` — inkl. der Pflicht-Sektion `## Wesentliche Insights` (siehe oben).
 
 ## Autoren-Bio (nicht im Markdown pflegen)
 

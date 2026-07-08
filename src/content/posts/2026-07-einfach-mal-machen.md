@@ -13,6 +13,15 @@ tldr:
 reasoningSeed:
   these: "In produzierenden Familienunternehmen läuft „einfach machen“ so lange gut, wie das physische Produkt einen impliziten Rahmen liefert; in neuem, rückmeldungsarmem Terrain wird dasselbe Vorgehen ohne gesetzten Rahmen nicht schnell, sondern langsam."
   frage: "Wenn ich das nächste Mal „lass uns einfach machen“ sage, weiß ich, ob hinter der Tür vertrautes Gelände liegt oder neues, und überspringe ich das kurze Richtung-Setzen nur, weil Nachdenken sich wie Stillstand anfühlt?"
+glossary:
+  - term: "Core Rigidities"
+    definition: "Dieselben Kernfähigkeiten, die ein Unternehmen im angestammten Geschäft stark machen – eingespielte Abläufe, Systeme, verinnerlichte Werte –, werden bei etwas Neuem zu Verhärtungen, die Anpassung behindern. Die Stärke des Kerngeschäfts wird im neuen Terrain zur Bremse."
+  - term: "RAPID"
+    definition: "Ein Modell für klare Entscheidungsrechte: Wer liefert Input, wer empfiehlt, wer stimmt zu, wer entscheidet, wer setzt um. Es macht die sonst implizite Frage explizit, wer eine Entscheidung überhaupt treffen darf."
+  - term: "Zwei-Wege-Tür"
+    definition: "Bezos' Unterscheidung zwischen umkehrbaren und unumkehrbaren Entscheidungen. Umkehrbare Züge kann man mit etwa 70 % der Information treffen und nach unten delegieren; nur wirklich unumkehrbare rechtfertigen den langsamen, zentralen Weg."
+  - term: "Ausrichtung und Autonomie"
+    definition: "Erst eine geteilte Ausrichtung – ein klares Wohin – macht dezentrale Autonomie möglich. Ohne Ausrichtung führt Autonomie zu Chaos, ohne Autonomie führt Ausrichtung zu Stillstand."
 ---
 
 „Wir machen einfach mal.“ Den Satz höre ich oft, und meistens fällt er in einem bestimmten Typ von Unternehmen: inhabergeführt, mit einem physischen Produkt, auf das man mit gutem Recht stolz ist, weil es über Jahrzehnte besser geworden ist und im Markt funktioniert. Handwerksnah, weil die Kunden oft selbst Handwerker sind und weil man auch selbst fertigt und ausliefert, statt in Folien über das Fertigen zu reden. „Wir sind Hersteller, wir machen, keine Bedenkenträger.“ Das ist nicht dahingesagt, sondern ein Selbstbild, bei dem man gut versteht, woher es kommt.
@@ -62,6 +71,24 @@ Was diese Antwort so schwer angreifbar macht, ist ihre Wurzel. Der Stolz auf das
 Mir ist aufgefallen, dass das dieselbe Kultur ist, die auch lange Schwierigkeiten hat, ein Vorhaben aufzugeben. Wann ein Unternehmen eine Initiative beendet, woran es rechtzeitig merken würde, dass etwas nicht aufgeht, und warum gerade solche Unternehmen sich damit so schwertun, beleuchte ich in einer eigenen Field Note, [„Wann hören wir auf?“](/posts/2026-06-wann-hoeren-wir-auf/), im Detail. Hier soll es beim Rahmen bleiben, der das Aufhören überhaupt erst entscheidbar macht.
 
 Zum Schluss ein paar Fragen zum Nachdenken: Wenn ich das nächste Mal „lass uns einfach machen“ sage, weiß ich dann, ob hinter der Tür Bekanntes liegt oder Neues, oder renne ich nur los, weil kurzes Nachdenken sich wie Stillstand anfühlt? Und wenn ich es ehrlich nicht weiß: Was hindert mich wirklich daran, kurz die Richtung vorzugeben, bevor aus dem Vortrieb eine Bremse wird? Ist es Stolz, kulturelle Überzeugung, oder einfach Unsicherheit darüber, wie ich in unbekanntem Terrain einen Rahmen und eine Richtung vorgebe?
+
+## Wesentliche Insights
+
+### 1 — Der implizite Rahmen des Kerngeschäfts
+
+Im eingespielten Geschäft liefert das physische Produkt einen unsichtbaren Rahmen: Produktionszyklen, Auftrag und Lieferung, Saison und über Jahrzehnte verfeinerte Abläufe geben den Takt vor, ohne dass ihn jemand aufschreiben müsste. „Einfach machen“ funktioniert dort, weil dieser Rahmen längst existiert – so tief eingebaut, dass ihn keiner mehr als Leistung erkennt. Was von außen wie Erfolg ohne Struktur aussieht, ist ein alter, gut gebauter Rahmen.
+
+### 2 — In neuem Terrain macht dasselbe Vorgehen langsam
+
+Fehlt der Taktgeber – ein neuer Markt, ein eigenes Software-Produkt, ein schwächelndes Kerngeschäft –, wird „einfach machen“ ohne gesetzten Rahmen nicht schnell, sondern langsam. Ist nicht geklärt, wer entscheiden darf, eskaliert jede offene Frage nach oben, und die Entscheidungen stauen sich bei wenigen Köpfen. Eskalation ist das Langsamste, was eine Organisation kennt – das Gegenteil von dem, was „machen“ eigentlich meint.
+
+### 3 — Der Denkfehler: Information sitzt unten, nicht oben
+
+Die Annahme, oben werde auf Basis kondensierter Information schneller und besser entschieden, hält nicht stand. Die Information, auf die es ankommt, sitzt dort, wo gearbeitet wird – am Kunden, an der Maschine, am Code. Sie über mehrere Ebenen nach oben und die Entscheidung wieder zurück zu transportieren, verschiebt das Überlegen nur und fügt Verzerrung und Wartezeit hinzu.
+
+### 4 — Innehalten ist nicht Stillstand, sondern die Bedingung für Tempo
+
+Gerade im rückmeldungsarmen Feld ist das kurze Richtung-Setzen kein Bremsen, sondern das, was schnell macht: erst die Ausrichtung, dann die Autonomie. Wer die Richtung setzt und benennt, woran man den Fortschritt erkennt, muss nicht mehr jede Entscheidung selbst treffen. Der Macher überspringt genau dieses Innehalten, weil es sich schnell anfühlt – und läuft damit in den Stillstand, den er vermeiden wollte.
 
 [^lb]: Dorothy Leonard-Barton, „Core Capabilities and Core Rigidities: A Paradox in Managing New Product Development“, Strategic Management Journal 13, Special Issue (Summer 1992), S. 111–125: Dieselben Kernfähigkeiten (Fertigkeiten, technische und Management-Systeme sowie verinnerlichte Werte), die ein Unternehmen im angestammten Geschäft stark machen, werden bei Neuproduktentwicklung zu „core rigidities“, die Innovation behindern. https://doi.org/10.1002/smj.4250131009
 
