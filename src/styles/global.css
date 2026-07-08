@@ -19,7 +19,8 @@
   --rule: #e4e4e7;          /* zinc-200 */
   --accent: #0f766e;        /* teal-700 */
   --accent-strong: #115e59; /* teal-800 */
-  --measure: 40rem;
+  --measure: 42rem;
+  --measure-wide: 54rem;
   --sans: 'Geist', system-ui, -apple-system, 'Segoe UI', sans-serif;
   --mono: 'Geist Mono', ui-monospace, SFMono-Regular, monospace;
 }
@@ -304,9 +305,13 @@ a:hover { text-decoration: underline; }
 .post-hero {
   position: relative;
   overflow: hidden;
-  border-radius: 4px;
+  border-radius: 6px;
   background: var(--ink);
-  margin: 0 0 2.6rem;
+  /* Bild bricht aus der Lesespalte aus: Text bleibt schmal, das Bild trägt die Breite */
+  width: min(var(--measure-wide), calc(100vw - 2.8rem));
+  margin-left: 50%;
+  margin-bottom: 2.6rem;
+  transform: translateX(-50%);
 }
 .post-hero img { display: block; width: 100%; height: auto; filter: grayscale(1) contrast(1.03); }
 .post-hero::after {
