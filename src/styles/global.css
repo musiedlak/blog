@@ -510,6 +510,9 @@ a:hover { text-decoration: underline; }
 .seed-copy.is-copied { background: var(--accent-strong); }
 
 /* ---------- Reasoning Seed ---------- */
+/* Oben nach TL;DR: als eigene Zone einklammern (Linie oben via .post-appendix,
+   Linie unten hier), damit der Übergang zum Artikel sauber getrennt ist. */
+.reasoning-seed { padding-bottom: 2.4rem; border-bottom: 1px solid var(--rule); margin-bottom: 2.8rem; }
 .rs-head { display: flex; align-items: center; gap: 0.55rem; margin: 0 0 1rem; }
 .rs-head h2 { margin: 0; }
 .rs-help-toggle {
