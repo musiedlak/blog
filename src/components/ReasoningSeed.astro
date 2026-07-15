@@ -22,7 +22,7 @@ const clipboardBase = { title, these, frage, sourceUrl };
     <p>
       Ein Reasoning Seed ist ein strukturierter Prompt, den du in dein KI-Reasoning-Tool kopieren
       kannst (Claude, ChatGPT, Obsidian, Notion). Er enthält die These des Artikels, die zentrale
-      Spannung und die wesentlichen Insights — bereit für deine eigene Analyse.
+      Spannung und die wesentlichen Erkenntnisse — bereit für deine eigene Analyse.
     </p>
     <p>Klick den Button unten, um den vollständigen Prompt als Markdown zu kopieren.</p>
   </div>
@@ -64,7 +64,7 @@ const clipboardBase = { title, these, frage, sourceUrl };
 
       const headings = document.querySelectorAll(".post-body .fn-insight-heading");
       if (headings.length > 0) {
-        lines.push("", "### Wesentliche Insights");
+        lines.push("", "### Wesentliche Erkenntnisse");
         headings.forEach((h3) => {
           const num = h3.querySelector(".fn-insight-num")?.textContent?.trim() || "";
           const heading = (h3.textContent?.trim() || "").replace(/^\d{2}\s*/, "");

@@ -4,7 +4,8 @@
 //
 // Kern-Set (Pflicht):
 //   - TL;DR + Reasoning Seed  → bereits durch das Zod-Schema erzwungen
-//   - Body-Sektion "## Wesentliche Insights" mit ≥ 2 Insights (### N — …)
+// Optional (nur validiert, wenn vorhanden):
+//   - Body-Sektion "## Wesentliche Erkenntnisse" mit ≥ 2 Erkenntnissen (### N — …)
 //   - Quellen-Apparat (Fußnoten [^x]: oder sources-Frontmatter)
 // Empfohlen (nur Hinweis): Glossar.
 //
@@ -40,12 +41,10 @@ for (const file of files) {
     warnings++;
   };
 
-  // Pflicht: Wesentliche-Insights-Sektion mit ≥ 2 Insights
-  if (!/^##\s+Wesentliche Insights\s*$/m.test(body)) {
-    err('Body-Sektion "## Wesentliche Insights" fehlt (Pflicht)');
-  } else {
+  // Optional: Wesentliche-Erkenntnisse-Sektion — wenn vorhanden, ≥ 2 Erkenntnisse
+  if (/^##\s+Wesentliche Erkenntnisse\s*$/m.test(body)) {
     const count = (body.match(/^###\s+\d+\s*—\s+/gm) || []).length;
-    if (count < 2) err(`"Wesentliche Insights" braucht ≥ 2 Insights (### N — …), gefunden: ${count}`);
+    if (count < 2) err(`"Wesentliche Erkenntnisse" braucht ≥ 2 Erkenntnisse (### N — …), gefunden: ${count}`);
   }
 
   // Pflicht: Quellen-Apparat (Fußnoten bevorzugt, sources-Frontmatter erlaubt)

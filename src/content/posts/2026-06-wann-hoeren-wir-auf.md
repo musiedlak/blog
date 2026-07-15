@@ -72,7 +72,7 @@ Was bleibt, ist eine Frage, die ich an mich selbst stelle so sehr wie an jeden, 
 
 Wenn ich das nächste Mal wirklich überzeugt bin, traue ich mir dann zu, im selben Moment aufzuschreiben, woran ich erkennen würde, dass ich mich irre? Und wenn die Antwort ehrlich „nein" ist: Wovor schützt mich dieses Nein eigentlich?
 
-## Wesentliche Insights
+## Wesentliche Erkenntnisse
 
 ### 1 — Das Frühsignal gehört an die erfolgskritische Annahme
 

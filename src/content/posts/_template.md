@@ -30,16 +30,16 @@ Einleitung / Aufhänger. Steigt in die Beobachtung ein, nicht in die These.
 
 Argumentationsstrang. Belege im Fließtext als Fußnoten setzen.[^quelle]
 
-## Wesentliche Insights
+## Wesentliche Erkenntnisse
 
-<!-- PFLICHT: ≥ 2 Insights. Format "### N — Titel", Nummerierung mit Em-Dash (—).
-     Die erste Absatz-Zeile jedes Insights landet auch im kopierbaren Reasoning Seed. -->
+<!-- Optional: ≥ 2 Erkenntnisse. Format "### N — Titel", Nummerierung mit Em-Dash (—).
+     Die erste Absatz-Zeile jeder Erkenntnis landet auch im kopierbaren Reasoning Seed. -->
 
-### 1 — Titel des ersten Insights
+### 1 — Titel der ersten Erkenntnis
 
 Erklärung in 2–4 Sätzen. Kein bloßes Wiederholen des TL;DR, sondern die verdichtete Einsicht.
 
-### 2 — Titel des zweiten Insights
+### 2 — Titel der zweiten Erkenntnis
 
 Erklärung in 2–4 Sätzen.
 
