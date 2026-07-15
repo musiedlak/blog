@@ -8,7 +8,7 @@ interface Props {
 
 const { title, these, frage, sourceUrl } = Astro.props;
 
-// Basis fürs Clipboard; Key Insights werden am Klick aus dem DOM gelesen.
+// Basis fürs Clipboard; die Erkenntnisse werden am Klick aus dem DOM gelesen.
 const clipboardBase = { title, these, frage, sourceUrl };
 ---
 
@@ -51,7 +51,7 @@ const clipboardBase = { title, these, frage, sourceUrl };
     });
   });
 
-  // Kopieren: vollständigen Prompt als Markdown bauen (Key Insights aus dem DOM)
+  // Kopieren: vollständigen Prompt als Markdown bauen (Erkenntnisse aus dem DOM)
   document.querySelectorAll<HTMLButtonElement>(".rs-copy").forEach((btn) => {
     btn.addEventListener("click", async () => {
       const base = JSON.parse(btn.dataset.rsBase || "{}");
