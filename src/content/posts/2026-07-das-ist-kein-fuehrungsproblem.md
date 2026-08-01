@@ -4,6 +4,8 @@ subtitle: "Eine Zukunftsforscherin sagt, viele Führungsprobleme seien in Wahrhe
 date: 2026-07-31
 description: "Vieles, was in Unternehmen als Führungsproblem verhandelt wird, sind in Wahrheit fehlende grundlegende Entscheidungen, die Führung Tag für Tag ausgleicht. Eine Einordnung zu einem FOCUS-Beitrag von Friederike Müller-Friemauth."
 kind: Einordnung
+cover: ./das-ist-kein-fuehrungsproblem.jpg
+coverAlt: "Ein stählernes Traggerüst im Gegenlicht, die Sonne bricht zwischen den Streben hindurch."
 tldr:
   - "Eine Zukunftsforscherin argumentiert im FOCUS, dass Firmen aus Strukturproblemen Führungsfragen machen und Führungskräfte dadurch unter Druck geraten, obwohl die Ursachen tiefer liegen."
   - "Ich lege meine Erfahrung daneben: Was Führung Tag für Tag ausgleicht, sind oft grundlegende Entscheidungen, die nie getroffen wurden, und genau dieses Ausgleichen macht die Dysfunktion unsichtbar, bis niemand mehr nach ihr fragt."
