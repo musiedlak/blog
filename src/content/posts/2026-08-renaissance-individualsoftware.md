@@ -1,5 +1,5 @@
 ---
-title: "Renaissance der Individualsoftware"
+title: "Steht eine Renaissance der Individualsoftware bevor?"
 subtitle: "Warum sinkende Entwicklungskosten ausgerechnet den am wenigsten digitalisierten Branchen passgenaue Software in Reichweite bringen."
 date: 2026-08-01
 description: "Die Long-Tail-Logik erreicht die Unternehmenssoftware: Warum passgenaue Nischenwerkzeuge für den Mittelstand wirtschaftlich werden und weshalb gerade die Baubranche davon profitiert."
@@ -16,7 +16,12 @@ reasoningSeed:
   frage: "Wenn passgenaue Individualsoftware in Wochen statt Monaten entsteht und der Engpass nicht mehr die Technik ist, sondern die Frage, welches Problem man zuerst löst und ob die eigenen Daten das hergeben: Wer entscheidet das?"
 ---
 
-Die Long-Tail-Theorie beschreibt, wie technologische Veränderungen, vor allem sinkende Vertriebs- und Produktionskosten, es plötzlich wirtschaftlich machen, viele sehr individuelle und einzeln wenig nachgefragte Produkte zu verkaufen. Im E-Commerce hat dieses Muster ganze Märkte verändert. Mich beschäftigt seit einer Weile die Frage: Greift dasselbe Muster jetzt auch für Software? Und wenn ja, dann wäre Individualsoftware der Gipfel davon, das Werkstück in Stückzahl 1. Meine These: Der Hebel ist dort am größten, wo die Not am größten ist, also ausgerechnet in den Branchen, die bisher am wenigsten digitalisiert sind. Realisiert wird er aber zuerst dort, wo ein Unternehmen anfängt, seine Daten in Ordnung zu bringen.
+
+Zwischen der großen Standardsoftware wie SAP oder Salesforce und der Excel-Telefon-PDF-Wirklichkeit im Alltag liegt eine Lücke: genau das Werkzeug, das ein Unternehmen für ein spezifisches Problem bräuchte, und solche Probleme gibt es oft an mehreren Stellen. Diese Mitte war bisher wirtschaftlich fast nie erreichbar, weil individuell zu bauen zu aufwändig, zu langsam und zu riskant war.
+
+Ich glaube, das ändert sich gerade, weil die Kosten, funktionale Software zu bauen, in kurzer Zeit dramatisch gefallen sind. Mich erinnert das an die Long-Tail-Theorie von vor ca. 20 Jahren. Ursprünglich beschreibt sie, warum sinkende Produktions- und Vertriebskosten Hunderte, Tausende oder Millionen einzelner, wenig nachgefragter Nischenprodukte wirtschaftlich machten. Denselben Effekt sehe ich jetzt in der Softwareentwicklung: nicht sinkende Vertriebskosten, sondern sinkende Entwicklungskosten verschieben die Wirtschaftlichkeitsschwelle, bis hin zur Software in Stückzahl 1.
+
+Meine Vermutung: Der Hebel ist dort am größten, wo die Not am größten ist, also ausgerechnet in den Branchen, die bisher am wenigsten digitalisiert sind. Einlösen wird ihn aber zuerst, wer im eigenen Unternehmen anfängt, die Daten in Ordnung zu bringen. Und sollte sich diese Entwicklung fortsetzen, stünde tatsächlich eine Renaissance der Individualsoftware bevor.
 
 ## Das Problem der fehlenden Mitte
 
@@ -44,9 +49,9 @@ So hat bei einem Hersteller beispielsweise eine einzelne Person in wenigen Woche
 
 Diese Verschiebung verändert nicht, was technisch möglich ist, sondern was sich *lohnt*.
 
-Und hier schließt sich der Kreis zum Long Tail, wenn auch mit einer Verschiebung: Vor zwanzig Jahren senkten sinkende Vertriebskosten die Schwelle, ein Nischenprodukt überhaupt anzubieten; heute senken sinkende Entwicklungskosten die Schwelle, es selbst zu bauen. Nur ist die Nische hier ein Werkstück in Stückzahl 1, gebaut für genau ein Unternehmen, dessen einziger Nutzer den vollen Wert trägt.
+Die Analogie zum Long Tail ist nicht vollständig. Dort entsteht der wirtschaftliche Effekt, weil viele unterschiedliche Nischenprodukte zusammen einen großen Markt bilden. Bei Individualsoftware hat dagegen jedes Werkzeug genau einen Nutzer. Der gemeinsame Mechanismus ist jedoch derselbe: Sinkende Kosten verschieben die Wirtschaftlichkeitsschwelle. Beim Long Tail waren es Produktions- und Vertriebskosten, heute sind es Entwicklungskosten.
 
-Warum kommen solche Lösungen nicht als Standardprodukte auf den Markt? Mein Erklärungsversuch: Der Markt ist zu fragmentiert, die Anforderungen sind zu spezifisch, die Zahlungsbereitschaft pro Einzelkunde zu gering für ein risikokapitalfinanziertes Produkt. Als individuell gebautes Werkzeug, das eine Person als Dienstleistung oder im Unternehmen in wenigen Wochen baut statt eines Projektteams über Monate, sieht die Rechnung dagegen anders aus.
+Warum kommen solche Lösungen nicht als Standardprodukte auf den Markt? Aus meiner Sicht ist der Markt zu fragmentiert, die Anforderungen sind zu spezifisch, die Zahlungsbereitschaft pro Einzelkunde zu gering für ein tragfähiges Standardprodukt. Als individuell gebautes Werkzeug, das eine Person als Dienstleistung oder im Unternehmen in wenigen Wochen baut statt eines Projektteams über Monate, sieht die Rechnung dagegen anders aus.
 
 ## Was damit in Reichweite rückt
 
