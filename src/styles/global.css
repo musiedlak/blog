@@ -610,6 +610,15 @@ a:hover { text-decoration: underline; }
   letter-spacing: 0.03em;
   color: var(--faint);
 }
+.site-footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.6rem 1.5rem;
+}
+.site-footer-links { display: flex; gap: 1.2rem; }
+.site-footer-links a { color: inherit; text-decoration: none; }
+.site-footer-links a:hover { color: var(--ink, inherit); text-decoration: underline; }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 34rem) {
