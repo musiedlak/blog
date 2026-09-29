@@ -96,7 +96,7 @@ Genau deshalb reicht es nicht, erst an der einzelnen Entscheidung mehr Kontrolle
 
 Denn je leichter Entscheidungen umgesetzt werden können, desto wichtiger wird eine Entscheidungslogik, die diese Entscheidungen bereits vorher in einen kohärenten Rahmen setzt und damit gute Entscheidungen begünstigt.
 
-## Wie KI Entscheidungen zum deutlichen Engpass macht
+## Wenn Entscheidungen zum Engpass werden
 
 Der natürliche Reflex, den ich in Bezug auf Menschen in solchen Situationen hingegen oft erlebe, ist: „Wir müssen diese wichtigen operativen Entscheidungen weiter oben in der Hierarchie treffen, damit Klarheit herrscht und keine Fehler passieren." Ich hätte einige Anmerkungen zu den kritischen Annahmen hinter diesem Vorgehen, aber die offensichtliche Kritik im  Kontext des Artikels ist, dass die Entscheider\*innen weiter oben in der Hierarchie damit zum Engpass werden und Entscheidungen, alleine durch den Weg, unweigerlich langsamer werden.
 
