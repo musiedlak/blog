@@ -14,6 +14,8 @@ reasoningSeed:
   these: "Eine inkohärente Entscheidungslogik erzeugt Widersprüche, die früher durch menschliche Rückfragen und Eskalationen abgefangen wurden. KI senkt die Kosten, sie ungefragt umzusetzen, und macht dieselbe Inkohärenz dadurch schneller sichtbar und teurer, ohne dass Kontrolle sie auflöst, denn Kontrolle kostet dieselbe Geschwindigkeit, für die KI eingesetzt wird."
   frage: "Wie viel Zeit investieren die Führungskräfte in Ihrem Unternehmen tatsächlich darin, gute Entscheidungen möglich zu machen, und wie viel darin, schlechte im Nachhinein zu korrigieren?"
 glossary:
+  - term: Citizen Developer
+    definition: "Eine Person ohne klassische Softwareentwicklungs-Ausbildung, die mit No-Code-, Low-Code- oder KI-Werkzeugen selbst Software baut oder erweitert. Im Artikel der Punkt, an dem KI den bisherigen Umweg über ein Entwicklungsteam überflüssig macht, und damit auch die Person, die auf diesem Weg zufällig hätte nachfragen können."
   - term: Harness
     definition: Der Rahmen um ein KI-Modell, der bestimmt, wie ein Agent arbeitet und entscheidet, zum Beispiel Anweisungen, Werkzeuge, Vorgaben und Tests. Ein gut gebauter Harness legt fest, woran sich ein Agent hält und wann er eine Aufgabe als erledigt ansehen darf.
   - term: KI-Governance
