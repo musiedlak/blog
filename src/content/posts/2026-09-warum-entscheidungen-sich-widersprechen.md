@@ -92,7 +92,8 @@ Wir haben bereits gesehen, dass die Entscheidung auch ohne KI zum Problem werden
 
 Damit steigt die Zahl der Entscheidungen, die auf einer unvollständigen oder widersprüchlichen Entscheidungslogik beruhen können. Und vor allem steigt die Geschwindigkeit, mit der aus einer solchen Entscheidung eine reale Veränderung wird.
 
-Genau deshalb reicht es nicht, erst an der einzelnen Entscheidung mehr Kontrolle einzubauen. Die Frage ist vielmehr, welche Entscheidungen die Organisation überhaupt dezentral treffen können soll – und welche strategischen Rahmen dafür gelten.
+Genau deshalb reicht es nicht, erst an der einzelnen Entscheidung mehr Kontrolle einzubauen. Auch der nachvollziehbare Impuls, der an dieser Stelle kommen mag, "aber KI-Governance", greift aus meiner Sicht zu kurz. Das würde das Problem auf den Blickwinkel der KI beschränken, statt es als grundsätzliche Inkohärenz zu betrachten, die in Organisationen entstehen kann.
+Die Frage ist also vielmehr, welche zentralen Entscheidungen den nötigen Rahmen dafür geben, dass dezentrale Entscheidungen sinnvoll und risikoarm getroffen werden.
 
 Denn je leichter Entscheidungen umgesetzt werden können, desto wichtiger wird eine Entscheidungslogik, die diese Entscheidungen bereits vorher in einen kohärenten Rahmen setzt und damit gute Entscheidungen begünstigt.
 
