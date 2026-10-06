@@ -5,10 +5,15 @@ interface Props {
   title: string;
   description?: string;
   wide?: boolean;
+  // Open Graph / Link-Vorschau (LinkedIn, Messenger): optional, Seiten ohne Bild bekommen nur Titel und Beschreibung.
+  ogImage?: string;
+  ogImageAlt?: string;
+  ogType?: 'website' | 'article';
 }
 
-const { title, description, wide = false } = Astro.props;
+const { title, description, wide = false, ogImage, ogImageAlt, ogType = 'website' } = Astro.props;
 const year = new Date().getFullYear();
+const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site).href : undefined;
 ---
 
 <!doctype html>
@@ -19,6 +24,18 @@ const year = new Date().getFullYear();
     <title>{title}</title>
     {description && <meta name="description" content={description} />}
     <meta name="author" content="Jan Musiedlak" />
+    {canonical && <link rel="canonical" href={canonical} />}
+    <meta property="og:site_name" content="Jan Musiedlak: Field Notes" />
+    <meta property="og:locale" content="de_DE" />
+    <meta property="og:type" content={ogType} />
+    <meta property="og:title" content={title} />
+    {description && <meta property="og:description" content={description} />}
+    {canonical && <meta property="og:url" content={canonical} />}
+    {ogImage && <meta property="og:image" content={ogImage} />}
+    {ogImage && <meta property="og:image:width" content="1200" />}
+    {ogImage && <meta property="og:image:height" content="630" />}
+    {ogImage && ogImageAlt && <meta property="og:image:alt" content={ogImageAlt} />}
+    <meta name="twitter:card" content={ogImage ? 'summary_large_image' : 'summary'} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <script is:inline defer src="https://api.pirsch.io/pa.js" id="pianjs" data-path-prefix="/blog" data-code="8QP24byp7s89Bxe1OoWKM4X5Ep1opV4T"></script>
   </head>
