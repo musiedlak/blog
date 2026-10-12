@@ -43,4 +43,4 @@ Erklärung in 2–4 Sätzen. Kein bloßes Wiederholen des TL;DR, sondern die ver
 
 Erklärung in 2–4 Sätzen.
 
-[^quelle]: Autor:in, „Titel“, Publikation/Jahr: kurzer Abstract, was die Quelle aussagt und warum sie hier relevant ist. https://example.com/quelle
+[^quelle]: Autor:in, „Titel“, Publikation/Jahr: ein bis zwei Sätze dazu, was die Quelle aussagt. Keine Prüfnotizen und keine Hinweise an dich selbst (geprüft, lag nicht vor, Sekundärquelle); nur Abgrenzung, wo der Text über die Quelle hinausgeht. https://example.com/quelle
