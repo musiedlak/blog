@@ -22,6 +22,7 @@ Alle Fotos stammen von Unsplash und stehen unter der [Unsplash License](https://
 | `2026-07-das-ist-kein-fuehrungsproblem.md` | `das-ist-kein-fuehrungsproblem.jpg` | „Die Sonne scheint durch eine Metallrahmenkonstruktion" | Laura Cleffmann ([@cloudett](https://unsplash.com/@cloudett)) | https://unsplash.com/photos/B1ugBx4c2u0 | 18.03.2025 |
 | Artikel „Bevor die KI entscheidet" (Cover) | `bevor-die-ki-entscheidet-cover.jpg` | „Spinnennetz in Nahaufnahme" | Rafael Garcin ([@nimbus_vulpis](https://unsplash.com/@nimbus_vulpis)) | https://unsplash.com/photos/wlOv3cf41iE | 31.10.2020 |
 | Artikel „Bevor die KI entscheidet" (Grafik) | `bevor-die-ki-entscheidet-rahmen.png` | Eigene Grafik (Inhaltliche und organisatorische Entscheidungsebenen) | Jan Musiedlak | keine fremde Quelle | – |
+| `2026-11-mein-co-moderator-ist-eine-ki.md` | `mein-co-moderator-ist-eine-ki.jpg` | „Eine Wand mit einem Haufen Haftnotizen darauf" (Foto zu Büro, Treffen, Gemeinschaftsarbeit) | Jakub Żerdzicki ([@jakubzerdzicki](https://unsplash.com/@jakubzerdzicki)) | https://unsplash.com/photos/fQOyF0D0cDU | 31.12.2024 (abgerufen 19.11.2026) |
 
 Die Cover werden auf den Seiten per CSS als Teal-Duotone dargestellt. Für die Link-Vorschau (Open Graph) wird das Cover auf 1200×630 zugeschnitten und unverändert in der Farbe verwendet.
 

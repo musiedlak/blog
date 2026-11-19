@@ -4,6 +4,8 @@ subtitle: "Claude Code als Protokollant im Remote Workshop. Ein Erfahrungsberich
 date: 2026-11-19
 description: "Claude lief bei einem Remote-Workshop nebenher als Nachschlagehilfe und wurde dann zum Protokollanten. Was das gebracht hat, was dabei schiefging und welche vier Regeln ich daraus mitnehme."
 kind: Erfahrungsbericht
+cover: ./mein-co-moderator-ist-eine-ki.jpg
+coverAlt: "Eine Wand mit bunten Haftnotizen und handschriftlichen Skizzen, im Vordergrund unscharf."
 tldr:
   - "Claude war bei einem Remote-Workshop nur als Nachschlagehilfe nebenher geöffnet. Nach dem ersten Block habe ich ihm das Transkript gegeben, und ab da hat er in jeder Pause meine Notizen auf dem Board mit dem Gesprochenen abgeglichen und Lücken ergänzt. In der Mittagspause hat er Karten übertragen und vorsortiert, was sonst die ganze Pause gekostet hätte."
   - "Möglich war das, weil Board, Wissen und Unterlagen offene Dateien sind, die Claude lesen und schreiben kann: Excalidraw als reines JSON, dazu Markdown, Obsidian und Git."
